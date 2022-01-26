@@ -96,6 +96,7 @@ export async function load_node({
 
 				const resolved = resolve(event.url.pathname, requested.split('?')[0]);
 
+				/** @type {Response} */
 				let response;
 
 				// handle fetch requests for static assets. e.g. prebaked data, etc.
